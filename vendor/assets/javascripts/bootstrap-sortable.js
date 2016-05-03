@@ -235,9 +235,10 @@
         context.lastSort = sortKey;
 
         if (bsSort[sortKey] === 'desc') {
-            $this.find('span.sign').addClass('up');
+            $this.find('span.sign').addClass('down');
             $this.addClass('up').removeClass('down nosort');
         } else {
+            $this.find('span.sign').addClass('up');
             $this.addClass('down').removeClass('up nosort');
         }
 
